@@ -30,8 +30,6 @@ cd llvm
 mkdir build
 cd build
 cmake -G "Unix Makefiles" \
-  -DCMAKE_BUILD_TYPE=MinSizeRel \
-  -DLLVM_ENABLE_ASSERTIONS=ON \
   -DLLVM_ENABLE_PROJECTS="clang;lldb" \
   -DLLVM_TARGETS_TO_BUILD="host" \
   ../llvm
